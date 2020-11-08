@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="static/css/style.css" rel="stylesheet" />
+    <link href="static/image/dashboard.ico" rel="icon" type="image/x-icon" />
+    <title>Admin DashBoard</title>
+  </head>
+  <body>
+    <div class="app">
+      <nav>
+        <label for="sidebar_button" class="toggler">
+          <span class="menu-toggler__line"></span>
+          <span class="menu-toggler__line"></span>
+          <span class="menu-toggler__line"></span>
+        </label>
+        <input
+          type="checkbox"
+          name="action-button"
+          role="button"
+          id="sidebar_button"
+        />
+        <div class="menu-items">
+          <label for="sidebar_button" class="toggler close">&#10060;</label>
+          <div class="heading">
+            <h2>Admin Dashboard</h2>
+          </div>
+          <div class="page_links">
+            <ul class="link_lists">
+              <li onclick="handleSectionChange('home');">Home</li>
+              <li onclick="handleSectionChange('policy');">Policy</li>
+              <li onclick="handleSectionChange('about');">About</li>
+              <li onclick="handleSectionChange('footer');">Links</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <div class="main_container">
+          <h2>Dashboard</h2>
+          <section id="home">Home Section</section>
+          <section id="policy">Policy Section</section>
+          <section id="about">About Section</section>
+        </div>
+        <footer id="footer"><small>Copyright ©&nbsp; 2020</small></footer>
+      </main>
+    </div>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

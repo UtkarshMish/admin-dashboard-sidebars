@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="static/css/style.css" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="static/image/dashboard.ico" rel="icon" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <title>Admin DashBoard</title>
+  </head>
+  <body>
+    <div class="sidebar" id="left-sidebar">
+      <div class="main__logo">
+        <img src="static/image/dashboard.ico" width="54" height="54" />
+      </div>
+      <div class="side-links">
+        <div class="home icon-elements">
+          <i class="fa fa-home icons" aria-hidden="true"> </i>
+          <i class="fa fa-angle-right right-arrow" aria-hidden="true"></i>
+          <div class="home dropright-container noselect">
+            <a href="#">&emsp;Dashboard</a>
+            <a href="#">&emsp;Settings</a>
+            <a href="#">&emsp;Get Support</a>
+          </div>
+        </div>
+
+        <div class="phone icon-elements">
+          <i class="fa fa-phone icons" aria-hidden="true"> </i>
+          <i class="fa fa-angle-right right-arrow" aria-hidden="true"></i>
+          <div class="phone dropright-container noselect">
+            <a href="#">&emsp;Get Call</a>
+            <a href="#">&emsp;Call a Number</a>
+            <a href="#">&emsp;View Phone Number</a>
+          </div>
+        </div>
+        <div class="address icon-elements">
+          <i class="fa fa-address-book icons" aria-hidden="true"> </i>
+          <i class="fa fa-angle-right right-arrow" aria-hidden="true"></i>
+          <div class="address dropright-container noselect">
+            <a href="#">&emsp;Using email</a>
+            <a href="#">&emsp;Visit us</a>
+            <a href="#">&emsp;Customer Service</a>
+          </div>
+        </div>
+      </div>
+      <div class="side-links__full">
+        <div class="element" onclick="toggleDropDown('home');">
+          <i class="fa fa-home icons" aria-hidden="true"></i>
+          <p class="noselect">Home</p>
+        </div>
+        <div class="home dropdown-container noselect">
+          <a href="#">&emsp;Dashboard</a>
+          <a href="#">&emsp;Settings</a>
+          <a href="#">&emsp;Get Support</a>
+        </div>
+        <div class="element" onclick="toggleDropDown('phone');">
+          <i class="fa fa-phone icons" aria-hidden="true"></i>
+          <p class="noselect">Phone</p>
+        </div>
+        <div class="phone dropdown-container noselect">
+          <a href="#">&emsp;Get Call</a>
+          <a href="#">&emsp;Call a Number</a>
+          <a href="#">&emsp;View Phone Number</a>
+        </div>
+        <div class="element" onclick="toggleDropDown('address');">
+          <i class="fa fa-address-book icons" aria-hidden="true"></i>
+          <p class="noselect">Contact us</p>
+        </div>
+        <div class="address dropdown-container noselect">
+          <a href="#">&emsp;Using email</a>
+          <a href="#">&emsp;Visit us</a>
+          <a href="#">&emsp;Customer Service</a>
+        </div>
+      </div>
+    </div>
+    <main>
+      <header>
+        <div class="icons" onclick="handleToggle();">
+          <i class="fa fa-bars clickable icons" aria-hidden="true"></i>
+        </div>
+        <h3>Admin Dashboard</h3>
+        <div class="main__links">
+          <p>Settings</p>
+        </div>
+      </header>
+
+      <div class="main__content">
+        <h3>Main Container Content</h3>
+        <table cellpadding="15">
+          <thead>
+            <th>Link Id</th>
+            <th>Name of URL</th>
+            <th>Time Taken</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>https://github.com</td>
+              <td>10s</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>https://google.com</td>
+              <td>20s</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>https://gmail.com</td>
+              <td>10s</td>
+            </tr>
+          </tbody>
+        </table>
+        <footer>Copyright 2020</footer>
+      </div>
+    </main>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
